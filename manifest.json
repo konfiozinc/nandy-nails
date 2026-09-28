@@ -1,0 +1,16 @@
+{
+  "name": "Nandy Nails | Yulieth Montalvo",
+  "short_name": "Nandy Nails",
+  "description": "Salud de la uña, sistemas artificiales, esmaltado semipermanente y nail art. Agenda tu cita.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#faf3ed",
+  "theme_color": "#722f37",
+  "lang": "es",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/apple-touch-180.png", "sizes": "180x180", "type": "image/png", "purpose": "any" }
+  ]
+}
