@@ -1,618 +1,180 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="theme-color" content="#722f37"/>
-    <title>Nandy Nails | Yulieth Montalvo — Nail Artist</title>
-    <meta name="description" content="Nandy Nails by Yulieth Montalvo: salud de la uña, sistemas artificiales, esmaltado semipermanente y nail art. Agenda tu cita por WhatsApp.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#722f37" />
+  <title>Nandy Nails | Yulieth Montalvo — Nail Artist</title>
+  <meta name="description" content="Nandy Nails by Yulieth Montalvo: salud de la uña, sistemas artificiales, esmaltado semipermanente y nail art de autor. Agenda tu cita.">
 
-    <link rel="canonical" href="https://konfiozinc.github.io/nandy-nails/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Nandy Nails" />
-    <meta property="og:title" content="Nandy Nails | Yulieth Montalvo — Nail Artist" />
-    <meta property="og:description" content="Salud de la uña, sistemas artificiales, esmaltado semipermanente y nail art de autor." />
-    <meta property="og:url" content="https://konfiozinc.github.io/nandy-nails/" />
-    <meta property="og:image" content="https://konfiozinc.github.io/nandy-nails/og-image.jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:locale" content="es_CO" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Nandy Nails | Yulieth Montalvo — Nail Artist" />
-    <meta name="twitter:description" content="Salud de la uña, sistemas artificiales, esmaltado semipermanente y nail art." />
-    <meta name="twitter:image" content="https://konfiozinc.github.io/nandy-nails/og-image.jpg" />
+  <link rel="canonical" href="https://konfiozinc.github.io/nandy-nails/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Nandy Nails" />
+  <meta property="og:title" content="Nandy Nails | Yulieth Montalvo — Nail Artist" />
+  <meta property="og:description" content="Salud de la uña, sistemas artificiales, esmaltado semipermanente y nail art de autor." />
+  <meta property="og:url" content="https://konfiozinc.github.io/nandy-nails/" />
+  <meta property="og:image" content="https://konfiozinc.github.io/nandy-nails/og-image.jpg" />
+  <meta property="og:locale" content="es_CO" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Nandy Nails | Yulieth Montalvo — Nail Artist" />
+  <meta name="twitter:description" content="Salud de la uña, sistemas artificiales, esmaltado y nail art." />
+  <meta name="twitter:image" content="https://konfiozinc.github.io/nandy-nails/og-image.jpg" />
 
-    <link rel="manifest" href="manifest.json" />
-    <link rel="icon" type="image/png" href="icons/favicon-64.png" />
-    <link rel="apple-touch-icon" href="icons/apple-touch-180.png" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/png" href="icons/favicon-64.png" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-180.png" />
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "NailSalon",
-      "name": "Nandy Nails",
-      "description": "Nail studio de Yulieth Montalvo: salud de la uña, sistemas artificiales, esmaltado semipermanente y nail art de autor.",
-      "telephone": "+573011623221",
-      "email": "lilismith01003@gmail.com",
-      "url": "https://konfiozinc.github.io/nandy-nails/",
-      "image": "https://konfiozinc.github.io/nandy-nails/og-image.jpg",
-      "priceRange": "$$",
-      "areaServed": { "@type": "Country", "name": "Colombia" },
-      "openingHours": ["Mo-Fr 09:00-19:00", "Sa 10:00-17:00"],
-      "founder": { "@type": "Person", "name": "Yulieth Montalvo", "jobTitle": "Nail Artist" }
-    }
-    </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NailSalon",
+    "name": "Nandy Nails",
+    "description": "Nail studio de Yulieth Montalvo: salud de la uña, sistemas artificiales, esmaltado semipermanente y nail art de autor.",
+    "telephone": "+573011623221",
+    "email": "lilismith01003@gmail.com",
+    "url": "https://konfiozinc.github.io/nandy-nails/",
+    "image": "https://konfiozinc.github.io/nandy-nails/og-image.jpg",
+    "priceRange": "$$",
+    "areaServed": { "@type": "Country", "name": "Colombia" },
+    "openingHours": ["Mo-Fr 09:00-19:00", "Sa 10:00-17:00"],
+    "founder": { "@type": "Person", "name": "Yulieth Montalvo", "jobTitle": "Nail Artist" }
+  }
+  </script>
 
-    <script>
-    const GA_ID = 'G-XXXXXXXXXX';
-    if (GA_ID && !/^G-XXXX/.test(GA_ID)) {
-      const s = document.createElement('script');
-      s.async = true;
-      s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
-      document.head.appendChild(s);
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){ dataLayer.push(arguments); }
-      gtag('js', new Date());
-      gtag('config', GA_ID);
-    }
-    </script>
+  <script>
+  const GA_ID = 'G-XXXXXXXXXX';
+  if (GA_ID && !/^G-XXXX/.test(GA_ID)) {
+    const s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', GA_ID);
+  }
+  </script>
 
-    <!-- Script de QR dinámico autónomo -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,300&family=Poppins:wght@300;400;500;600;700&display=swap');
-        
-        * { font-family: 'Poppins', system-ui, -apple-system, sans-serif; box-sizing: border-box; margin: 0; padding: 0; }
-        body { background-color: #1c1917; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 10px; }
-        
-        .font-playfair { font-family: 'Playfair Display', serif; }
-
-        /* Chasis Fijo Móvil (380px max-width) */
-        .card-container {
-            width: 100%;
-            max-width: 380px;
-            height: 100vh;
-            max-height: 750px;
-            background: #faf3ed;
-            border-radius: 28px;
-            overflow: hidden;
-            position: relative;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.9);
-            border: 1px solid #722f37;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        /* Header Vinotinto / Warm */
-        .card-header {
-            background: linear-gradient(180deg, #722f37 0%, #8b3a45 60%, #3d2c2f 100%);
-            padding: 22px 16px 18px 16px;
-            text-align: center;
-            border-bottom-left-radius: 32px;
-            border-bottom-right-radius: 32px;
-            position: relative;
-            border-bottom: 1px solid rgba(114, 47, 55, 0.3);
-        }
-
-        .badge-status {
-            position: absolute;
-            top: 12px;
-            right: 14px;
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(4px);
-            color: #ffffff;
-            font-size: 8px;
-            font-weight: 800;
-            padding: 3px 10px;
-            border-radius: 20px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .avatar-circle {
-            width: 80px;
-            height: 80px;
-            background: #ffffff;
-            border-radius: 50%;
-            margin: 8px auto 6px auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 3px solid #c9a087;
-            box-shadow: 0 0 16px rgba(114, 47, 55, 0.4);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .avatar-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 50%;
-        }
-
-        /* Títulos */
-        .title-main { font-size: 24px; font-weight: 900; color: #faf3ed; letter-spacing: -0.3px; line-height: 1.1; }
-        .title-sub { font-size: 10px; font-weight: 700; color: #fde68a; text-transform: uppercase; letter-spacing: 0.8px; margin-top: 3px; }
-
-        .tagline-box {
-            background: rgba(0, 0, 0, 0.4);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            border-radius: 12px;
-            padding: 6px 12px;
-            margin: 8px auto 0 auto;
-            max-width: 250px;
-        }
-        .tagline-text { font-size: 8.5px; font-weight: 800; color: #fde68a; text-transform: uppercase; letter-spacing: 0.5px; }
-
-        /* Cuerpo de Acciones */
-        .content-body {
-            padding: 12px 16px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            overflow-y: auto;
-        }
-
-        /* Botón WhatsApp Oficial */
-        .btn-whatsapp {
-            background-color: #25d366;
-            color: white;
-            font-weight: 800;
-            text-transform: uppercase;
-            font-size: 11px;
-            letter-spacing: 0.5px;
-            padding: 12px;
-            border-radius: 14px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            text-decoration: none;
-            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
-        }
-
-        /* Grilla Categorías */
-        .grid-services {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 8px;
-        }
-        .service-card {
-            background: rgba(114, 47, 55, 0.06);
-            border: 1px solid rgba(114, 47, 55, 0.15);
-            padding: 8px 10px;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .service-icon {
-            width: 24px;
-            height: 24px;
-            background: rgba(114, 47, 55, 0.15);
-            color: #722f37;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-        }
-        .service-text { font-size: 9px; font-weight: 700; color: #44403c; line-height: 1.2; }
-
-        .btn-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 8px;
-        }
-        .btn-action {
-            background: #ffffff;
-            color: #44403c;
-            border: 1px solid #e7e5e4;
-            padding: 10px;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 6px;
-            text-decoration: none;
-            font-size: 10px;
-            font-weight: 700;
-        }
-
-        .btn-vcard {
-            background: #722f37;
-            color: #ffffff;
-            border: 1px solid #8b3a45;
-            padding: 11px;
-            border-radius: 12px;
-            font-weight: 800;
-            font-size: 10px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 6px;
-            width: 100%;
-            box-shadow: 0 4px 12px rgba(114, 47, 55, 0.25);
-        }
-
-        /* Barra Inferior */
-        .bottom-nav {
-            background: #ffffff;
-            display: flex;
-            justify-content: space-around;
-            padding: 8px 4px 6px 4px;
-            border-top: 1px solid #e7e5e4;
-        }
-        .nav-item {
-            color: #78716c;
-            background: none;
-            border: none;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-size: 8px;
-            font-weight: 700;
-            gap: 3px;
-            cursor: pointer;
-        }
-
-        /* Pie de Marca Blindado Konfío Zinc */
-        .brand-footer {
-            background: #ffffff;
-            color: #94a3b8;
-            font-size: 9px;
-            text-align: center;
-            padding: 8px 4px;
-            font-weight: 800;
-            letter-spacing: 0.5px;
-            border-top: 1px solid #f5f5f4;
-            text-transform: uppercase;
-        }
-
-        /* Modales */
-        .modal-overlay {
-            position: absolute;
-            inset: 0;
-            background: rgba(61, 44, 47, 0.85);
-            backdrop-filter: blur(4px);
-            z-index: 50;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            padding: 16px;
-        }
-        .modal-overlay.active { display: flex; }
-        .modal-box {
-            background: #ffffff;
-            border: 1px solid #722f37;
-            border-radius: 20px;
-            width: 100%;
-            max-height: 80vh;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            color: #292524;
-        }
-        .modal-header {
-            background: #722f37;
-            color: #ffffff;
-            padding: 12px 16px;
-            font-weight: 800;
-            font-size: 11px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            text-transform: uppercase;
-            border-bottom: 1px solid rgba(139, 58, 69, 0.3);
-        }
-        .modal-close {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 16px;
-            font-weight: 800;
-            cursor: pointer;
-        }
-
-        /* Galería Snap Nativa */
-        .gallery-scroll {
-            display: flex;
-            gap: 10px;
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
-            padding: 4px;
-        }
-        .gallery-item {
-            flex: 0 0 100%;
-            scroll-snap-align: center;
-            border-radius: 12px;
-            overflow: hidden;
-            height: 200px;
-        }
-        .gallery-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .toast {
-            position: absolute;
-            bottom: 70px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: #722f37;
-            color: #ffffff;
-            border: 1px solid #8b3a45;
-            padding: 6px 16px;
-            border-radius: 20px;
-            font-size: 10px;
-            font-weight: 700;
-            display: none;
-            z-index: 60;
-        }
-    </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <div class="card-container">
-        <div>
-            <!-- Header -->
-            <div class="card-header">
-                <span class="badge-status">Nail Artist</span>
-                
-                <h1 class="title-main font-playfair">Yulieth Montalvo</h1>
-                <div class="title-sub">NANDY NAILS – Nail Artist</div>
+<div id="splash" role="status" aria-live="polite">
+  <img src="logo.jpg" alt="Logotipo de Nandy Nails">
+  <span>KONFÍO ZINC</span>
+</div>
 
-                <!-- Avatar Foto Real -->
-                <div class="avatar-circle">
-                    <img src="logo.jpg" alt="Logotipo de Nandy Nails — Yulieth Montalvo" class="avatar-img">
-                </div>
-                
-                <div class="tagline-box">
-                    <div class="tagline-text">Nail Art · Sistemas Artificiales</div>
-                </div>
-            </div>
+<div class="card-shell">
+  <div class="main-content">
 
-            <!-- Cuerpo Interactivo -->
-            <div class="content-body">
-                
-                <a href="https://wa.me/573011623221?text=Hola%20Yulieth%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20para%20mis%20u%C3%B1as." target="_blank" class="btn-whatsapp">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-                    ¡Agendar mi Cita Ya!
-                </a>
+    <header class="portada">
+      <div class="avatar-wrap">
+        <img id="portada-logo" src="logo.jpg" alt="Logotipo de Nandy Nails — Yulieth Montalvo">
+        <div class="badge-verificado" title="Perfil verificado"><i class="fa-solid fa-check" aria-hidden="true"></i></div>
+      </div>
+      <h1 id="portada-nombre">Nandy Nails</h1>
+      <p class="profesion" id="portada-profesion">Nail Artist</p>
+      <p class="tagline" id="portada-tagline">Nail Art · Sistemas Artificiales</p>
+      <div class="badge-disponible"><span class="dot"></span> Disponible para atenderte</div>
+    </header>
 
-                <div class="grid-services">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
-                        </div>
-                        <span class="service-text">Salud de la Uña</span>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
-                        </div>
-                        <span class="service-text">Sistemas Artificiales</span>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.92 0 1.5-.72 1.5-1.5 0-.42-.16-.82-.43-1.12-.27-.3-.42-.7-.42-1.13 0-.92.75-1.67 1.67-1.67H16c3.31 0 6-2.69 6-6 0-4.96-4.49-9-10-9z"/></svg>
-                        </div>
-                        <span class="service-text">Nail Art de Autor</span>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12l4 6-10 12L2 9z"/></svg>
-                        </div>
-                        <span class="service-text">Esmaltado Técnico</span>
-                    </div>
-                </div>
+    <section class="acciones-rapidas">
+      <button class="btn-principal btn-whatsapp" data-action="whatsapp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Agendar cita por WhatsApp</button>
+      <button class="btn-principal btn-llamar" data-action="llamar"><i class="fa-solid fa-phone" aria-hidden="true"></i> Llamar ahora</button>
+      <div class="acciones-secundarias">
+        <button class="btn-secundario" data-action="guardar"><i class="fa-solid fa-address-card" aria-hidden="true"></i> Guardar contacto</button>
+        <button class="btn-secundario" data-action="compartir"><i class="fa-solid fa-share-nodes" aria-hidden="true"></i> Compartir / QR</button>
+      </div>
+    </section>
 
-                <div class="btn-row">
-                    <a href="tel:+573011623221" class="btn-action">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#722f37" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                        Llamar Directo
-                    </a>
-                    <a href="mailto:lilismith01003@gmail.com" class="btn-action">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#722f37" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                        Enviar Correo
-                    </a>
-                </div>
+    <nav class="nav-modulos" aria-label="Secciones de la tarjeta">
+      <button class="nav-item" data-modal="modal-servicios"><span class="ic"><i class="fa-solid fa-palette" aria-hidden="true"></i></span>Servicios</button>
+      <button class="nav-item" data-modal="modal-galeria"><span class="ic"><i class="fa-solid fa-images" aria-hidden="true"></i></span>Galería</button>
+      <button class="nav-item" data-scroll="horarios"><span class="ic"><i class="fa-regular fa-clock" aria-hidden="true"></i></span>Horarios</button>
+      <button class="nav-item" data-modal="modal-informacion"><span class="ic"><i class="fa-solid fa-circle-info" aria-hidden="true"></i></span>Información</button>
+    </nav>
 
-                <button id="btn-vcard" class="btn-vcard">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" x2="19" y1="8" y2="14"/><line x1="22" x2="16" y1="11" y2="11"/></svg>
-                    Guardar Contacto en Agenda
-                </button>
+    <section class="sobre" id="sobre">
+      <h2 class="seccion-titulo">Sobre el estudio</h2>
+      <p>Nail studio de <strong>Yulieth Montalvo</strong>: salud de la uña, sistemas artificiales, esmaltado semipermanente y nail art de autor, con atención presencial y virtual.</p>
+      <a class="chip-mapa" href="https://www.google.com/maps/search/?api=1&query=Colombia" target="_blank" rel="noopener noreferrer">
+        <i class="fa-solid fa-location-dot" aria-hidden="true"></i> Colombia · ver en el mapa
+      </a>
+    </section>
 
-            </div>
-        </div>
+    <section class="horarios" id="horarios">
+      <h2 class="seccion-titulo">Horarios</h2>
+      <div id="horarios-tabla" aria-live="polite"></div>
+      <p class="horarios-nota">Atención exclusiva bajo cita previa.</p>
+    </section>
 
-        <!-- Navegación Inferior & Firma de Marca -->
-        <div>
-            <div class="bottom-nav">
-                <button class="nav-item" onclick="openModal('modal-services')">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-                    <span>Servicios</span>
-                </button>
-                <button class="nav-item" onclick="openModal('modal-gallery')">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
-                    <span>Galería</span>
-                </button>
-                <button class="nav-item" onclick="openModal('modal-guarantee')">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-                    <span>Opiniones</span>
-                </button>
-                <button class="nav-item" onclick="openModal('modal-coverage')">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="16" y2="12"/><line x1="12" x2="12.01" y1="8" y2="8"/></svg>
-                    <span>Info</span>
-                </button>
-                <button class="nav-item" onclick="openModal('modal-qr')">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="5" height="5" x="3" y="3" rx="1"/><rect width="5" height="5" x="16" y="3" rx="1"/><rect width="5" height="5" x="3" y="16" rx="1"/><path d="M21 16h-3a2 2 0 0 0-2 2v3"/><path d="M21 21v.01"/><path d="M12 7v3a2 2 0 0 1-2 2H7"/><path d="M3 12h.01"/><path d="M12 3h.01"/><path d="M12 16v.01"/><path d="M16 12h1"/><path d="M21 12v.01"/><path d="M12 21v-1"/></svg>
-                    <span>QR</span>
-                </button>
-            </div>
-            
-            <div class="brand-footer">
-                <strong style="color: #38bdf8;">KONFÍO ZINC</strong> © <span id="anio">2025</span> — Todos los derechos reservados · <a href="privacidad.html" style="color:#722f37;">Privacidad</a>
-            </div>
-        </div>
+    <div id="redes-row" role="group" aria-label="Redes sociales"></div>
 
-        <!-- MODALES -->
-        <div id="modal-services" class="modal-overlay" onclick="closeModal('modal-services')">
-            <div class="modal-box" onclick="event.stopPropagation()">
-                <div class="modal-header">
-                    <span>Servicios y Tarifas</span>
-                    <button class="modal-close" aria-label="Cerrar" onclick="closeModal('modal-services')">✕</button>
-                </div>
-                <div style="padding: 16px; font-size: 11px; line-height: 1.5; color: #57534e;">
-                    <strong style="color: #722f37; font-size: 12px;">💅 Salud y Saneamiento de la Uña</strong><br/>
-                    Análisis estructural, esterilización rigurosa y preparación biológica profesional. Desde $40.000 COP<br/><br/>
-                    <strong style="color: #722f37; font-size: 12px;">✨ Sistemas Artificiales</strong><br/>
-                    Esculpidas estructuradas en Gel, Acrílico Premium o Polygel de alta resistencia. Desde $90.000 COP<br/><br/>
-                    <strong style="color: #722f37; font-size: 12px;">💎 Esmaltado Semipermanente Técnico</strong><br/>
-                    Máxima adherencia nivelada. Garantiza entre 15 y 21 días de brillo impecable sin dañar la uña natural. $50.000 COP<br/><br/>
-                    <strong style="color: #722f37; font-size: 12px;">🎨 Nail Art y Diseño Personalizado</strong><br/>
-                    Ilustración a mano alzada, encapsulados finos, efectos magnéticos ojo de gato y acabados espejo. Desde $60.000 COP
-                </div>
-            </div>
-        </div>
+    <section class="cta-final">
+      <h2 id="cta-titulo">Agenda tu cita</h2>
+      <p id="cta-texto">Escríbenos y te respondemos personalmente.</p>
+      <button class="btn-principal btn-whatsapp w-full" data-action="whatsapp" style="max-width:280px; margin:0 auto;">
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Agendar cita por WhatsApp
+      </button>
+    </section>
+  </div>
 
-        <div id="modal-gallery" class="modal-overlay" onclick="closeModal('modal-gallery')">
-            <div class="modal-box" onclick="event.stopPropagation()">
-                <div class="modal-header">
-                    <span>Portafolio de Estilismo</span>
-                    <button class="modal-close" aria-label="Cerrar" onclick="closeModal('modal-gallery')">✕</button>
-                </div>
-                <div style="padding: 16px;">
-                    <div class="gallery-scroll">
-                        <div class="gallery-item"><img src="assets/img/gallery/diseno-1.jpg" alt="Esmaltado estructurado" loading="lazy"></div>
-                        <div class="gallery-item"><img src="assets/img/gallery/diseno-2.jpg" alt="Diseño de uñas decorado" loading="lazy"></div>
-                        <div class="gallery-item"><img src="assets/img/gallery/diseno-3.jpg" alt="Técnica de manicura profesional" loading="lazy"></div>
-                    </div>
-                    <p style="font-size: 10px; color: #a8a29e; text-align: center; margin-top: 10px;">Desliza lateralmente para explorar el conjunto de aplicaciones reales.</p>
-                </div>
-            </div>
-        </div>
-
-        <div id="modal-guarantee" class="modal-overlay" onclick="closeModal('modal-guarantee')">
-            <div class="modal-box" onclick="event.stopPropagation()">
-                <div class="modal-header">
-                    <span>Testimonios Reales</span>
-                    <button class="modal-close" aria-label="Cerrar" onclick="closeModal('modal-guarantee')">✕</button>
-                </div>
-                <div style="padding: 16px; font-size: 11px; line-height: 1.5; color: #57534e;">
-                    <em>"Yulieth es una artista. Mis uñas quedaron perfectas y el diseño fue exactamente lo que pedí."</em><br/>
-                    <strong style="color: #722f37;">— Carolina M.</strong><br/><br/>
-                    <em>"Muy profesional, me explicó todo el proceso y los cuidados. Recomendada 100%."</em><br/>
-                    <strong style="color: #722f37;">— Daniela R.</strong>
-                </div>
-            </div>
-        </div>
-
-        <div id="modal-coverage" class="modal-overlay" onclick="closeModal('modal-coverage')">
-            <div class="modal-box" onclick="event.stopPropagation()">
-                <div class="modal-header">
-                    <span>Agenda y Operación</span>
-                    <button class="modal-close" aria-label="Cerrar" onclick="closeModal('modal-coverage')">✕</button>
-                </div>
-                <div style="padding: 16px; font-size: 11px; color: #57534e; line-height: 1.5;">
-                    <strong style="color: #722f37;">Horarios de Atención:</strong><br/>
-                    Lunes a Viernes: 9:00 AM – 7:00 PM<br/>
-                    Sábados: 10:00 AM – 5:00 PM<br/><br/>
-                    <strong style="color: #722f37;">Ubicación:</strong><br/>
-                    Colombia (Atención presencial y virtual)<br/><br/>
-                    <strong style="color: #722f37;">Teléfono:</strong> +57 301 162 3221<br/><br/>
-                    <em>* Tarifas expresadas en COP según requerimientos.</em>
-                </div>
-            </div>
-        </div>
-
-        <div id="modal-qr" class="modal-overlay" onclick="closeModal('modal-qr')">
-            <div class="modal-box" onclick="event.stopPropagation()" style="text-align: center; padding: 16px;">
-                <div class="modal-header" style="margin: -16px -16px 16px -16px;">
-                    <span>Compartir Tarjeta</span>
-                    <button class="modal-close" aria-label="Cerrar" onclick="closeModal('modal-qr')">✕</button>
-                </div>
-                <div id="qrcode" style="display: flex; justify-content: center; background: white; padding: 10px; border-radius: 12px; width: fit-content; margin: 0 auto;"></div>
-                <p style="font-size: 10px; color: #a8a29e; margin-top: 10px;">Escanea este código desde otro celular para abrir al instante la tarjeta digital.</p>
-                <button id="btn-share" class="btn-vcard" style="margin-top:10px;">📤 Compartir tarjeta</button>
-                <button id="btn-copiar" class="btn-vcard" style="margin-top:6px;">🔗 Copiar enlace</button>
-            </div>
-        </div>
-
-        <div id="toast" class="toast">Contacto guardado en agenda</div>
-
+  <footer class="pie-tarjeta">
+    <div>Creado por <a href="https://konfiozinc.github.io/" target="_blank" rel="noopener">KONFÍO ZINC</a> — Todos los derechos reservados</div>
+    <div class="pie-links">
+      <a href="privacidad.html">Política de privacidad</a> · © <span id="anio">2025</span> Nandy Nails
     </div>
+  </footer>
+</div>
 
-    <script>
-        function openModal(id) { document.getElementById(id).classList.add('active'); }
-        function closeModal(id) { document.getElementById(id).classList.remove('active'); }
-        function cerrarTodos() { document.querySelectorAll('.modal-overlay.active').forEach(m => closeModal(m.id)); }
-        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') cerrarTodos(); });
+<div class="modal" id="modal-servicios" data-modal-root role="dialog" aria-modal="true" aria-label="Servicios">
+  <div class="modal-panel">
+    <div class="modal-header"><h2>Servicios</h2><button class="modal-close" data-close aria-label="Cerrar"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button></div>
+    <div id="lista-servicios"></div>
+  </div>
+</div>
 
-        document.addEventListener('DOMContentLoaded', () => {
-            const qrBox = document.getElementById("qrcode");
-            if(qrBox) {
-                new QRCode(qrBox, {
-                    text: window.location.href,
-                    width: 130,
-                    height: 130,
-                    colorDark : "#722f37",
-                    colorLight : "#ffffff"
-                });
-            }
+<div class="modal" id="modal-galeria" data-modal-root role="dialog" aria-modal="true" aria-label="Galería de diseños">
+  <div class="modal-panel">
+    <div class="modal-header"><h2>Galería de Diseños</h2><button class="modal-close" data-close aria-label="Cerrar"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button></div>
+    <div class="swiper" id="swiper-galeria">
+        <div class="swiper-wrapper" id="swiper-wrapper"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <p class="galeria-nota">Desliza para ver fotos reales de nuestros diseños.</p>
+  </div>
+</div>
 
-            const toast = document.getElementById('toast');
-            const showToast = (msg) => {
-                toast.textContent = msg;
-                toast.style.display = 'block';
-                setTimeout(() => toast.style.display = 'none', 2200);
-            };
+<div class="modal" id="modal-informacion" data-modal-root role="dialog" aria-modal="true" aria-label="Información de contacto">
+  <div class="modal-panel">
+    <div class="modal-header"><h2>Información</h2><button class="modal-close" data-close aria-label="Cerrar"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button></div>
+    <div id="lista-informacion"></div>
+    <h3 class="info-sub">Especialidades</h3>
+    <div id="cobertura-chips"></div>
+  </div>
+</div>
 
-            const copiarFallback = (texto) => {
-                const ta = document.createElement('textarea');
-                ta.value = texto; ta.style.position = 'fixed'; ta.style.left = '-9999px';
-                document.body.appendChild(ta); ta.select();
-                try { document.execCommand('copy'); showToast('Enlace copiado'); } catch(e) { showToast('Copia: ' + texto); }
-                ta.remove();
-            };
-            const copiar = (texto) => {
-                if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(texto).then(() => showToast('Enlace copiado'), () => copiarFallback(texto));
-                else copiarFallback(texto);
-            };
+<div class="modal" id="modal-compartir" data-modal-root role="dialog" aria-modal="true" aria-label="Compartir tarjeta">
+  <div class="modal-panel text-center">
+    <div class="modal-header"><h2>Compartir Tarjeta</h2><button class="modal-close" data-close aria-label="Cerrar"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button></div>
+    <div id="qr-code" style="display:flex; justify-content:center; margin:16px 0;"></div>
+    <button class="btn-secundario w-full" id="btn-share-nativo" style="display:none;"><i class="fa-solid fa-share-nodes" aria-hidden="true"></i> Compartir con tus apps</button>
+    <button class="btn-secundario w-full" data-action="copiar-link" style="margin-top:8px;"><i class="fa-solid fa-link" aria-hidden="true"></i> Copiar enlace de la tarjeta</button>
+  </div>
+</div>
 
-            const btnShare = document.getElementById('btn-share');
-            if (btnShare) btnShare.addEventListener('click', async () => {
-                const data = { title: 'Nandy Nails | Yulieth Montalvo', text: 'Salud de la uña, sistemas artificiales y nail art. ¡Agenda tu cita!', url: window.location.href };
-                try { if (navigator.share) await navigator.share(data); else copiar(window.location.href); } catch(e) {}
-            });
-            const btnCopiar = document.getElementById('btn-copiar');
-            if (btnCopiar) btnCopiar.addEventListener('click', () => copiar(window.location.href));
+<div id="toast" role="status"></div>
 
-            document.getElementById('btn-vcard').addEventListener('click', () => {
-                const vCardData = `BEGIN:VCARD\nVERSION:3.0\nFN:Yulieth Montalvo\nORG:NANDY NAILS\nTITLE:Nail Artist\nTEL;TYPE=CELL:+573011623221\nEMAIL:lilismith01003@gmail.com\nADR:;;Colombia;;;;Colombia\nNOTE:Especialista en salud de la uña, sistemas artificiales y Nail Art.\nEND:VCARD`;
-                const blob = new Blob([vCardData], { type: 'text/vcard;charset=utf-8' });
-                const url = URL.createObjectURL(blob);
-                const a = document.createElement('a');
-                a.href = url;
-                a.download = 'Nandy_Nails_Yulieth_Montalvo.vcf';
-                document.body.appendChild(a); a.click(); a.remove();
-                setTimeout(() => URL.revokeObjectURL(url), 1200);
-                showToast('Contacto guardado en agenda');
-            });
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
-            const anio = document.getElementById('anio');
-            if (anio) anio.textContent = new Date().getFullYear();
+<script src="scripts.js"></script>
 
-            if ('serviceWorker' in navigator) navigator.serviceWorker.register('./service-worker.js').catch(() => {});
-        });
-    </script>
 </body>
 </html>
