@@ -33,7 +33,10 @@ const CONFIG = {
   galeria: [
     { src:"assets/img/gallery/diseno-1.jpg", alt:"Diseño de uñas" },
     { src:"assets/img/gallery/diseno-2.jpg", alt:"Diseño de uñas" },
-    { src:"assets/img/gallery/diseno-3.jpg", alt:"Diseño de uñas" }
+    { src:"assets/img/gallery/diseno-3.jpg", alt:"Diseño de uñas" },
+    { src:"assets/img/gallery/diseno-4.webp", alt:"Diseño de uñas con decoración de San Valentín en Nandy Nails" },
+    { src:"assets/img/gallery/diseno-5.webp", alt:"Manicure francés con detalles artísticos en Nandy Nails" },
+    { src:"assets/img/gallery/diseno-6.webp", alt:"Aplicación de esmalte semipermanente en Nandy Nails" }
   ],
   cobertura: { texto: "Atención presencial y virtual en Colombia.", zonas: ["Salud de la uña","Sistemas artificiales","Esmaltado","Nail Art"] },
   informacion: {

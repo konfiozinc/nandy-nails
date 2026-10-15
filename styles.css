@@ -243,3 +243,24 @@
     .pie-links a{color:var(--c-secondary);}
 
     :focus-visible{outline:2px solid var(--c-secondary); outline-offset:2px; border-radius:4px;}
+
+/* ---------- Logo: un poco más grande + hover ---------- */
+.avatar-wrap img, #portada-logo, #splash img {
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.avatar-wrap, .avatar-wrap img, #portada-logo {
+  width: 140px;
+  height: 140px;
+  max-width: 140px;
+}
+#splash img {
+  width: 84px;
+  height: 84px;
+}
+.avatar-wrap img:hover, #portada-logo:hover {
+  transform: scale(1.06);
+  box-shadow: 0 10px 24px rgba(114, 47, 55, .28);
+}
+@media (prefers-reduced-motion: reduce) {
+  .avatar-wrap img:hover, #portada-logo:hover { transform: none; }
+}
