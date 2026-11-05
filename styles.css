@@ -2,6 +2,11 @@
     :root{
       --c-primary:#722f37;      
       --c-secondary:#8b3a45;    
+      /* KZ-UPDATE-NANDY-003 · vino más vivo, solo para el botón «Llamar ahora».
+         Antes usaba --c-primary (#722f37): 9,6:1 sobre blanco, pero se lee como
+         un bloque oscuro. #a62e3c mantiene la familia del vino y conserva el
+         contraste (6,8:1 sobre blanco). */
+      --c-llamar:#a62e3c;
       --c-accent:#faf3ed;       
       --c-warn:#F97316;         
       --c-surface:#ffffff;
@@ -79,7 +84,10 @@
     /* MÓDULO 2 — PORTADA */
     .portada{
       background:linear-gradient(160deg, var(--c-primary) 0%, #1c1c24 100%);
-      padding:var(--space-6) var(--space-5) var(--space-5);
+      /* KZ-UPDATE-NANDY-003 · antes eran 32 px arriba y el conjunto quedaba
+         pegado al borde de la pantalla. Ahora respira (44 px) y en los
+         teléfonos con muesca se suma el área segura del sistema. */
+      padding:calc(44px + env(safe-area-inset-top, 0px)) var(--space-5) var(--space-5);
       text-align:center; color:#fff;
     }
     .portada .logo{width:64px; height:64px; object-fit:cover; border-radius:50%; margin:0 auto var(--space-3); border:2px solid var(--c-secondary);}
@@ -91,8 +99,19 @@
       font-size:12px; border:2px solid var(--c-primary);
     }
     .portada h1{font-family:var(--font-display); font-size:24px; font-weight:800; letter-spacing:-.01em;}
-    .portada .profesion{color:var(--c-secondary); font-weight:600; font-size:14px; margin-top:2px;}
-    .portada .tagline{color:#c9c9d1; font-size:13px; margin-top:var(--space-2); max-width:280px; margin-left:auto; margin-right:auto;}
+    /* KZ-UPDATE-NANDY-003 · el rol iba en --c-secondary (#8b3a45) sobre el rojo
+       oscuro de la portada: contraste ~1,6:1, prácticamente invisible. Se sube a
+       un rosa claro (≈8:1 sobre el fondo real de la portada). */
+    .portada .profesion{color:#f0d5d8; font-weight:600; font-size:14px; margin-top:3px;}
+    /* KZ-UPDATE-NANDY-003 · la línea «Nail Art · Sistemas Artificiales» quedaba
+       apretada contra el nombre (8 px) y se leía como texto cortado. Ahora tiene
+       aire arriba y abajo y un color más luminoso; el ancho sube para que no
+       parta en dos líneas en pantallas de 360 px. */
+    .portada .tagline{
+      color:#dcdce2; font-size:13.5px; line-height:1.5;
+      margin-top:var(--space-3); margin-bottom:2px;
+      max-width:320px; margin-left:auto; margin-right:auto;
+    }
     .badge-disponible{
       display:inline-flex; align-items:center; gap:6px; margin-top:var(--space-4);
       background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.16);
@@ -110,7 +129,14 @@
     }
     .btn-principal:active{transform:scale(.97);}
     .btn-whatsapp{background:#25D366; color:#fff;}
-    .btn-llamar{background:var(--c-primary); color:#fff; border:1px solid rgba(255,255,255,0.1);}
+    .btn-llamar{
+      background:linear-gradient(135deg, var(--c-llamar) 0%, #8d2634 100%);
+      color:#fff; border:1px solid rgba(255,255,255,.14);
+      box-shadow:0 6px 16px rgba(166,46,60,.28);
+      transition:transform var(--dur-fast) var(--ease), box-shadow .2s ease, filter .2s ease;
+    }
+    .btn-llamar:hover{filter:brightness(1.08); box-shadow:0 8px 20px rgba(166,46,60,.36);}
+    .btn-llamar:active{transform:scale(.97);}
     .acciones-secundarias{display:grid; grid-template-columns:repeat(2,1fr); gap:var(--space-3);}
     .btn-secundario{
       display:flex; align-items:center; justify-content:center; gap:8px;
