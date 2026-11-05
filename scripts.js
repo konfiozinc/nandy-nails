@@ -39,9 +39,9 @@ const CONFIG = {
        «Manicure profesional para caballero5.png», «Uñas fantasma con estilo Nadi
        Nails4.png» y «Manicure elegante en tonos rosa6.png», que siguen intactos
        en assets/img/. */
-    { src:"assets/img/gallery/diseno-4.webp", alt:"Manicure profesional para caballero en Nandy Nails" },
-    { src:"assets/img/gallery/diseno-5.webp", alt:"Uñas con diseño fantasma en Nandy Nails" },
-    { src:"assets/img/gallery/diseno-6.webp", alt:"Manicure elegante en tonos rosa en Nandy Nails" }
+    { src:"assets/img/gallery/diseno-4.webp", alt:"Manicure para caballero" },
+    { src:"assets/img/gallery/diseno-5.webp", alt:"Uñas fantasma con calavera" },
+    { src:"assets/img/gallery/diseno-6.webp", alt:"Manicure elegante en tonos rosa" }
   ],
   cobertura: { texto: "Atención presencial y virtual en Colombia.", zonas: ["Salud de la uña","Sistemas artificiales","Esmaltado","Nail Art"] },
   informacion: {
