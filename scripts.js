@@ -34,9 +34,14 @@ const CONFIG = {
     { src:"assets/img/gallery/diseno-1.jpg", alt:"Diseño de uñas" },
     { src:"assets/img/gallery/diseno-2.jpg", alt:"Diseño de uñas" },
     { src:"assets/img/gallery/diseno-3.jpg", alt:"Diseño de uñas" },
-    { src:"assets/img/gallery/diseno-4.webp", alt:"Manicura brillante con rayas y estrellas en Nandy Nails" },
-    { src:"assets/img/gallery/diseno-5.webp", alt:"Manicure profesional para caballero en Nandy Nails" },
-    { src:"assets/img/gallery/diseno-6.webp", alt:"Uñas con diseño fantasma en Nandy Nails" }
+    /* KZ-UPDATE-NANDY-004 · las tres fotos definitivas que envió el cliente.
+       Los archivos WebP de gallery/ son copias optimizadas (1000 px, ~66 KB) de
+       «Manicure profesional para caballero5.png», «Uñas fantasma con estilo Nadi
+       Nails4.png» y «Manicure elegante en tonos rosa6.png», que siguen intactos
+       en assets/img/. */
+    { src:"assets/img/gallery/diseno-4.webp", alt:"Manicure profesional para caballero en Nandy Nails" },
+    { src:"assets/img/gallery/diseno-5.webp", alt:"Uñas con diseño fantasma en Nandy Nails" },
+    { src:"assets/img/gallery/diseno-6.webp", alt:"Manicure elegante en tonos rosa en Nandy Nails" }
   ],
   cobertura: { texto: "Atención presencial y virtual en Colombia.", zonas: ["Salud de la uña","Sistemas artificiales","Esmaltado","Nail Art"] },
   informacion: {
@@ -193,7 +198,13 @@ const esc = (s) => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>
     if (id === 'modal-galeria' && !swiperInstance) {
       swiperInstance = new Swiper('#swiper-galeria', {
         loop: true, spaceBetween: 10, autoplay: { delay: 3500, disableOnInteraction: false },
-        pagination: { el: '.swiper-pagination', clickable: true }
+        pagination: { el: '.swiper-pagination', clickable: true },
+        /* KZ-UPDATE-NANDY-004 · flechas visibles a los lados y navegación con el
+           teclado. Antes solo se podía cambiar de foto deslizando, que en
+           computadora no es evidente. */
+        navigation: { nextEl: '#swiper-galeria .swiper-button-next', prevEl: '#swiper-galeria .swiper-button-prev' },
+        keyboard: { enabled: true, onlyInViewport: false },
+        a11y: { prevSlideMessage: 'Foto anterior', nextSlideMessage: 'Siguiente foto' }
       });
     }
     if (id === 'modal-compartir') {

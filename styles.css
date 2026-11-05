@@ -256,6 +256,51 @@
     .swiper-pagination-bullet-active{background:var(--c-secondary) !important;}
     .galeria-nota{font-size:10.5px; text-align:center; color:var(--c-text-mute); margin-top:12px;}
 
+    /* ── KZ-UPDATE-NANDY-004 · Flechas del carrusel ──────────────────────
+       Antes solo se podía pasar de foto deslizando, que en computadora no se
+       entiende. Las flechas se dibujan con bordes CSS (chevrones), sin depender
+       del icono de Swiper: si el CDN no carga, siguen viéndose. */
+    #swiper-galeria .swiper-button-prev,
+    #swiper-galeria .swiper-button-next{
+      width:42px; height:42px; margin-top:-21px;
+      display:flex; align-items:center; justify-content:center;
+      border-radius:50%;
+      background:rgba(21,21,26,.55);
+      border:1.5px solid rgba(255,255,255,.55);
+      color:#fff;
+      box-shadow:0 4px 14px rgba(0,0,0,.32);
+      -webkit-backdrop-filter:blur(4px); backdrop-filter:blur(4px);
+      transition:background .2s ease, transform .2s ease, border-color .2s ease;
+      z-index:10;
+    }
+    #swiper-galeria .swiper-button-prev{left:10px;}
+    #swiper-galeria .swiper-button-next{right:10px;}
+    #swiper-galeria .swiper-button-prev:hover,
+    #swiper-galeria .swiper-button-next:hover,
+    #swiper-galeria .swiper-button-prev:focus-visible,
+    #swiper-galeria .swiper-button-next:focus-visible{
+      background:var(--c-primary); border-color:#fff; transform:scale(1.08);
+    }
+    #swiper-galeria .swiper-button-prev::after,
+    #swiper-galeria .swiper-button-next::after{
+      content:""; width:10px; height:10px;
+      border-top:2.5px solid currentColor; border-right:2.5px solid currentColor;
+    }
+    #swiper-galeria .swiper-button-prev::after{transform:rotate(-135deg); margin-left:3px;}
+    #swiper-galeria .swiper-button-next::after{transform:rotate(45deg); margin-right:3px;}
+    @media (min-width:460px){
+      #swiper-galeria .swiper-button-prev,
+      #swiper-galeria .swiper-button-next{width:48px; height:48px; margin-top:-24px;}
+      #swiper-galeria .swiper-button-prev{left:14px;}
+      #swiper-galeria .swiper-button-next{right:14px;}
+      #swiper-galeria .swiper-button-prev::after,
+      #swiper-galeria .swiper-button-next::after{width:12px; height:12px;}
+    }
+    @media (prefers-reduced-motion: reduce){
+      #swiper-galeria .swiper-button-prev,
+      #swiper-galeria .swiper-button-next{transition:none;}
+    }
+
     /* Información: enlaces y chips */
     .info-link:hover{color:var(--c-secondary);}
     .info-sub{font-family:var(--font-display); font-size:14px; color:var(--c-primary); margin:var(--space-4) 0 var(--space-2);}
